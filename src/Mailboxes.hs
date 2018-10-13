@@ -7,7 +7,7 @@ module Mailboxes
 import Data.Strings (strStartsWith)
 
 filterByPrefix :: String -> [String] -> [String]
-filterByPrefix prefix = Prelude.filter (`strStartsWith` mailPrefix)
+filterByPrefix prefix = filter (`strStartsWith` mailPrefix)
   where
     mailPrefix = '+' : prefix
 
